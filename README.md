@@ -20,8 +20,6 @@ El sistema se basa en la utilización de tres Tipos de Datos Abstractos (TDAs) p
 
 El flujo principal es el siguiente: al registrar un paciente, su emergencia se inserta en la cola de acuerdo a la gravedad. Durante la atención, se extrae el paciente con mayor prioridad, quien es registrado en el historial y guardado en la pila por si se necesita revertir la acción. El sistema también ofrece funcionalidades para buscar pacientes tanto en la cola como en el historial, y para deshacer atenciones, restaurando al paciente en la cola.
 
-![Editor _ Mermaid Chart-2025-06-27-205548.png](attachment:c8a0d1dc-b850-42ca-a221-502de901283b:Editor___Mermaid_Chart-2025-06-27-205548.png)
-
 # Implementación
 
 El desarrollo se realizó en Java, con una estructura modular para facilitar la organización y mantenimiento del código. El archivo principal `Simulador.java` contiene el flujo y el menú de opciones. Las clases que modelan pacientes y emergencias están en el paquete `modelo`. Los TDAs propios — ColaPrioridad, ListaDoble y Pila — se implementan en el paquete `tda` y sus interfaces en `tda/interfaces`. Todo el código está documentado con comentarios claros que explican su funcionamiento.
